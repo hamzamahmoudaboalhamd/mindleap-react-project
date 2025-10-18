@@ -29,7 +29,7 @@ const TestimonialsComponent = () => {
           variants={FadeIn("down", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
           className="text-center text-heroBg my-12"
         >

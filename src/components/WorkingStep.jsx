@@ -27,7 +27,7 @@ const WorkingStep = () => {
           variants={FadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
           className="flex flex-col md:w-4/5 mx-auto md:flex-row gap-8"
         >

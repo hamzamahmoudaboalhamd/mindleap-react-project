@@ -16,7 +16,7 @@ function Hero() {
             variants={FadeIn("down", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
           >
             <h1 className="font-secondary font-bold leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
@@ -48,7 +48,7 @@ function Hero() {
               variants={FadeIn("left", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
               src={heroImg}
               alt="Happy person"
