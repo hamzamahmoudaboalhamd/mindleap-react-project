@@ -1,4 +1,4 @@
-import heroImg from "/src/assets/hero.webp";
+import heroImg from "/src/assets/hero.png";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { FadeIn } from "/src/Utilis/animation.js";
@@ -42,17 +42,17 @@ function Hero() {
           </motion.div>
 
           {/* Right: image with green card background */}
-          <div className="relative w-full mx-auto overflow-hidden h-[420px] sm:h-[520px] md:h-[600px] lg:h-[680px]">
+          <div className="relative w-full mx-auto overflow-hidden h-[420px] sm:h-[520px] md:h-[600px] lg:h-[720px]  rounded-[48px]">
             <div className="absolute -right-6 top-8 -z-10 h-80 w-60 sm:h-96 sm:w-72 md:h-[500px] md:w-[360px] lg:h-[560px] lg:w-[380px] bg-gradient-to-b from-emerald-500 to-green-600 rounded-[48px]"></div>
             <motion.img
               variants={FadeIn("left", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: false, amount: 0.5 }}
               transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
               src={heroImg}
               alt="Happy person"
-              className="w-full h-full object-cover object-top select-none"
+              className="w-full h-full object-cover object-top select-none  z-10"
             />
           </div>
         </div>
